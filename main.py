@@ -21,9 +21,12 @@ def calculate ():
     elif operation == '3':
         print ('{} * {} ='.format(num_1, num_2))
         print (num_1 * num_2)
-    elif operation == '3':
-        print ('{} / {} = '.format(num_1, num_2))
-        print (num_1 / num_2)
+    elif operation == '4':
+        if num_2 == 0:
+            print ('Division by 0 is not allowed')
+        else:
+            print ('{} / {} = '.format(num_1, num_2))
+            print (num_1 / num_2)
     else:
         print ('Please type a valid operation')
 
